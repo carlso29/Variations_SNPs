@@ -21,4 +21,5 @@ data$GC.binned <- cut(data$percent.GC, 5)
 #Plot it
 library(ggplot2)
 ggplot(data) + geom_bar(aes(x= GC.binned))
+ggplot(data) +geom_density(aes(x=depth, linetype = GC.binned), alpha = 0.5)
 ```
