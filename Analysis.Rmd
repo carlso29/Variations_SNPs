@@ -6,9 +6,12 @@ output: pdf_document
 #Load in data
 ```{r load-data}
 data <- read.csv("data/Dataset_S1.txt")
+#View data
 head(data)
 ```
 
-#View data
-
 #Plot data
+```{r plot-data}
+#Rename Col 12
+colnames(data)[12] <- "percent.GC"
+```
