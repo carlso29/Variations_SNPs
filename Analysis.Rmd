@@ -1,0 +1,10 @@
+---
+title: "Variation_SNP_Analysis"
+output: pdf_document
+---
+
+#Load in data
+
+#View data
+
+#Plot data
