@@ -4,6 +4,10 @@ output: pdf_document
 ---
 
 #Load in data
+```{r load-data}
+data <- read.csv("data/Dataset_S1.txt")
+head(data)
+```
 
 #View data
 
