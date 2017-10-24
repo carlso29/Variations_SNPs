@@ -14,4 +14,11 @@ head(data)
 ```{r plot-data}
 #Rename Col 12
 colnames(data)[12] <- "percent.GC"
+
+#Bin Data into 5 Bins
+data$GC.binned <- cut(data$percent.GC, 5)
+
+#Plot it
+library(ggplot2)
+ggplot(data) + geom_bar(aes(x= GC.binned))
 ```
